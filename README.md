@@ -7,6 +7,12 @@ DCAAS is a platform that captures valueable interactions between protocols and d
 On our platform a developer can explore protocols. Each protocal has it's own forum, where devs can come and ask questions. The protocol can come to DCAAS and answer the question. Now other developers can benefit from this interaction. Everything is recorded on chain.
 
 ## Chains deployed
+
+The code for the smart contracts can be viewed on any of the verified deployments or on the github repo below: 
+
+https://github.com/Rahat-ch/dcass_contracts
+
+
 Currently the protocols that we record the interactions on are:
 
 Mumbai:
