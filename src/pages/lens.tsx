@@ -7,33 +7,34 @@ import {
   Text,
   Divider,
   HStack,
-  Tag,
+  // Tag,
   Wrap,
   WrapItem,
-  SpaceProps,
-  useColorModeValue,
+  // SpaceProps,
   Container,
+  Button,
+  Flex,
   VStack,
 } from '@chakra-ui/react';
+import CustomLink from './components/CustomLink';
+// interface IBlogTags {
+//   tags: Array<string>;
+//   marginTop?: SpaceProps['marginTop'];
+// }
 
-interface IBlogTags {
-  tags: Array<string>;
-  marginTop?: SpaceProps['marginTop'];
-}
-
-const BlogTags: React.FC<IBlogTags> = (props) => {
-  return (
-    <HStack spacing={2} marginTop={props.marginTop}>
-      {props.tags.map((tag) => {
-        return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
-            {tag}
-          </Tag>
-        );
-      })}
-    </HStack>
-  );
-};
+// const BlogTags: React.FC<IBlogTags> = (props) => {
+//   return (
+//     <HStack spacing={2} marginTop={props.marginTop}>
+//       {props.tags.map((tag) => {
+//         return (
+//           <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
+//             {tag}
+//           </Tag>
+//         );
+//       })}
+//     </HStack>
+//   );
+// };
 
 interface BlogAuthorProps {
   date: Date;
@@ -46,7 +47,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
       <Image
         borderRadius="full"
         boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
+        src="/lens.jpeg"
         alt={`Avatar of ${props.name}`}
       />
       <Text fontWeight="medium">{props.name}</Text>
@@ -58,8 +59,39 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'7xl'} p="12">
-      <Heading as="h1">Stories by Chakra Templates</Heading>
+    <Container
+      maxW={'7xl'}
+      p="3"
+      bgGradient="linear(to-b, #1A202C, #000000)"
+      textColor="white"
+    >
+      <Box>
+        <Container maxW="container.xl">
+          <Flex alignItems="center" justifyContent="space-between">
+            <Box>
+              <Button as={CustomLink} href="/" bg="transparent" variant="link">
+                <Image
+                  src="/robot3.jpeg"
+                  alt="Robot Logo"
+                  width={'50'}
+                  height={'50'}
+                />
+              </Button>
+            </Box>
+            <Box>
+              <Button
+                bg="transparent"
+                borderColor="white"
+                borderWidth="2px"
+                color="white"
+              >
+                Sign In
+              </Button>
+            </Box>
+          </Flex>
+        </Container>
+      </Box>
+      <Heading as="h1">Lens support for Devs</Heading>
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"
@@ -82,9 +114,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src="/lens.jpeg"
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -92,13 +122,13 @@ const ArticleList = () => {
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
-              bgGradient={useColorModeValue(
-                'radial(orange.600 1px, transparent 1px)',
-                'radial(orange.300 1px, transparent 1px)',
-              )}
-              backgroundSize="20px 20px"
-              opacity="0.4"
-              height="100%"
+            // bgGradient={useColorModeValue(
+            //   'radial(orange.600 1px, transparent 1px)',
+            //   'radial(orange.300 1px, transparent 1px)',
+            // )}
+            // backgroundSize="20px 20px"
+            // opacity="0.4"
+            // height="100%"
             />
           </Box>
         </Box>
@@ -109,25 +139,17 @@ const ArticleList = () => {
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}
         >
-          <BlogTags tags={['Engineering', 'Product']} />
           <Heading marginTop="1">
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               Blog article title
             </Link>
           </Heading>
-          <Text
-            as="p"
-            marginTop="2"
-            color={useColorModeValue('gray.700', 'gray.200')}
-            fontSize="lg"
-          >
-            Lorem Ipsum is simply
-          </Text>
+
           <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} />
         </Box>
       </Box>
       <Heading as="h2" marginTop="5">
-        Latest articles
+        Latest Discussions
       </Heading>
       <Divider marginTop="5" />
       <Wrap spacing="30px" marginTop="5">
@@ -137,9 +159,7 @@ const ArticleList = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src="/lens.jpeg"
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -150,17 +170,14 @@ const ArticleList = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Some blog title
+                Question Title
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrs standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Answer Answer Answer Answer Answer Answer
             </Text>
             <BlogAuthor
               name="John Doe"
@@ -170,30 +187,11 @@ const ArticleList = () => {
         </WrapItem>
       </Wrap>
       <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-        <Heading as="h2">What we write about</Heading>
+        <Heading as="h2">About Lens</Heading>
         <Text as="p" fontSize="lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          condimentum quam arcu, eu tempus tortor molestie at. Vestibulum
-          pretium condimentum dignissim. Vestibulum ultrices vitae nisi sed
-          imperdiet. Mauris quis erat consequat, commodo massa quis, feugiat
-          sapien. Suspendisse placerat vulputate posuere. Curabitur neque
-          tortor, mattis nec lacus non, placerat congue elit.
-        </Text>
-        <Text as="p" fontSize="lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          condimentum quam arcu, eu tempus tortor molestie at. Vestibulum
-          pretium condimentum dignissim. Vestibulum ultrices vitae nisi sed
-          imperdiet. Mauris quis erat consequat, commodo massa quis, feugiat
-          sapien. Suspendisse placerat vulputate posuere. Curabitur neque
-          tortor, mattis nec lacus non, placerat congue elit.
-        </Text>
-        <Text as="p" fontSize="lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          condimentum quam arcu, eu tempus tortor molestie at. Vestibulum
-          pretium condimentum dignissim. Vestibulum ultrices vitae nisi sed
-          imperdiet. Mauris quis erat consequat, commodo massa quis, feugiat
-          sapien. Suspendisse placerat vulputate posuere. Curabitur neque
-          tortor, mattis nec lacus non, placerat congue elit.
+          Lens Protocol is a composable and decentralized social graph, ready
+          for you to build on so you can focus on creating a great experience,
+          not scaling your users.
         </Text>
       </VStack>
     </Container>
