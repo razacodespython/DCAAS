@@ -6,6 +6,8 @@ DCAAS is a platform that captures valueable interactions between protocols and d
 
 On our platform a developer can explore protocols. Each protocal has it's own forum, where devs can come and ask questions. The protocol can come to DCAAS and answer the question. Now other developers can benefit from this interaction. Everything is recorded on chain.
 
+# Next Steps
+
 ## Bot
 
 If the protocol doesn't want to go to DCAAS, but wants to capture the Q&A interaction from telegram, that's also possible! Add the bot to the chat and tell the bot to push both the questiona and answer to DCAAS.
