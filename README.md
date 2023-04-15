@@ -6,6 +6,19 @@ DCAAS is a platform that captures valueable interactions between protocols and d
 
 On our platform a developer can explore protocols. Each protocal has it's own forum, where devs can come and ask questions. The protocol can come to DCAAS and answer the question. Now other developers can benefit from this interaction. Everything is recorded on chain.
 
+## Chains deployed
+Currently the protocols that we record the interactions on are:
+
+Mumbai:
+https://mumbai.polygonscan.com/address/0x8E964732c29534e6C133d296cD2392e00969DCFD#code
+
+Linea:
+https://explorer.goerli.linea.build/address/0x3B6a36B1Bc355AD68b11cFB69cEde2270C183Ffa/transactions#address-tabs
+
+Scroll:
+https://blockscout.scroll.io/address/0xb87cc951e43463acf14cdee7F79E36809eb1F40A#code
+
+
 # Next Steps
 
 ## Bot
@@ -25,14 +38,3 @@ When a dev asks a question, the bot can answer. If the answer is valid 2 actions
 the protocol can push the question and answer via the bot to the chatgpt model.
 the answer gets recorded on chain and visible on DCAAS, so that the knowledge is captured.
 
-## Chains
-Currently the protocols that we record the interactions on are:
-
-Mumbai:
-https://mumbai.polygonscan.com/address/0x8E964732c29534e6C133d296cD2392e00969DCFD#code
-
-Linea:
-https://explorer.goerli.linea.build/address/0x3B6a36B1Bc355AD68b11cFB69cEde2270C183Ffa/transactions#address-tabs
-
-Scroll:
-https://blockscout.scroll.io/address/0xb87cc951e43463acf14cdee7F79E36809eb1F40A#code
