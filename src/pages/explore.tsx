@@ -173,12 +173,9 @@ function Explore() {
 
             <Stack bg="transparent">
               <CardBody bg="transparent">
-                <Heading size="md">The perfect latte</Heading>
+                <Heading size="md">Lens</Heading>
 
-                <Text py="2">
-                  Caffè latte is a coffee beverage of Italian origin made with
-                  espresso and steamed milk.
-                </Text>
+                <Text py="2">Get support for Lens right here!</Text>
               </CardBody>
 
               <CardFooter>
@@ -215,17 +212,14 @@ function Explore() {
 
             <Stack bg="transparent">
               <CardBody bg="transparent">
-                <Heading size="md">The perfect latte</Heading>
+                <Heading size="md">Linea</Heading>
 
-                <Text py="2">
-                  Caffè latte is a coffee beverage of Italian origin made with
-                  espresso and steamed milk.
-                </Text>
+                <Text py="2">Get support for Linea right here!</Text>
               </CardBody>
 
               <CardFooter>
                 <Button variant="solid" colorScheme="blue">
-                  Buy Latte
+                  Talk to Linea
                 </Button>
               </CardFooter>
             </Stack>
@@ -252,128 +246,14 @@ function Explore() {
 
             <Stack bg="transparent">
               <CardBody bg="transparent">
-                <Heading size="md">The perfect latte</Heading>
+                <Heading size="md">Polygon</Heading>
 
-                <Text py="2">
-                  Caffè latte is a coffee beverage of Italian origin made with
-                  espresso and steamed milk.
-                </Text>
+                <Text py="2">Get support for Polygon right here!</Text>
               </CardBody>
 
               <CardFooter>
                 <Button variant="solid" colorScheme="blue">
-                  Buy Latte
-                </Button>
-              </CardFooter>
-            </Stack>
-          </Card>
-        </Box>
-
-        {/* Card section lens */}
-        <Box pb={10}>
-          <Card
-            direction={{ base: 'column', sm: 'row' }}
-            overflow="hidden"
-            variant="outline"
-            bg="transparent"
-            textColor="white"
-          >
-            <Image
-              objectFit="cover"
-              maxW={{ base: '100%', sm: '200px' }}
-              src="/robot3.jpeg"
-              alt="Caffe Latte"
-              width={200}
-              height={100}
-            />
-
-            <Stack bg="transparent">
-              <CardBody bg="transparent">
-                <Heading size="md">The perfect latte</Heading>
-
-                <Text py="2">
-                  Caffè latte is a coffee beverage of Italian origin made with
-                  espresso and steamed milk.
-                </Text>
-              </CardBody>
-
-              <CardFooter>
-                <Button variant="solid" colorScheme="blue">
-                  Buy Latte
-                </Button>
-              </CardFooter>
-            </Stack>
-          </Card>
-        </Box>
-
-        {/* Card section lens */}
-        <Box pb={10}>
-          <Card
-            direction={{ base: 'column', sm: 'row' }}
-            overflow="hidden"
-            variant="outline"
-            bg="transparent"
-            textColor="white"
-          >
-            <Image
-              objectFit="cover"
-              maxW={{ base: '100%', sm: '200px' }}
-              src="/robot3.jpeg"
-              alt="Caffe Latte"
-              width={200}
-              height={100}
-            />
-
-            <Stack bg="transparent">
-              <CardBody bg="transparent">
-                <Heading size="md">The perfect latte</Heading>
-
-                <Text py="2">
-                  Caffè latte is a coffee beverage of Italian origin made with
-                  espresso and steamed milk.
-                </Text>
-              </CardBody>
-
-              <CardFooter>
-                <Button variant="solid" colorScheme="blue">
-                  Buy Latte
-                </Button>
-              </CardFooter>
-            </Stack>
-          </Card>
-        </Box>
-
-        {/* Card section lens */}
-        <Box pb={10}>
-          <Card
-            direction={{ base: 'column', sm: 'row' }}
-            overflow="hidden"
-            variant="outline"
-            bg="transparent"
-            textColor="white"
-          >
-            <Image
-              objectFit="cover"
-              maxW={{ base: '100%', sm: '200px' }}
-              src="/robot3.jpeg"
-              alt="Caffe Latte"
-              width={200}
-              height={100}
-            />
-
-            <Stack bg="transparent">
-              <CardBody bg="transparent">
-                <Heading size="md">The perfect latte</Heading>
-
-                <Text py="2">
-                  Caffè latte is a coffee beverage of Italian origin made with
-                  espresso and steamed milk.
-                </Text>
-              </CardBody>
-
-              <CardFooter>
-                <Button variant="solid" colorScheme="blue">
-                  Buy Latte
+                  Talk to Polygon
                 </Button>
               </CardFooter>
             </Stack>
